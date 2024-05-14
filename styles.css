@@ -1,0 +1,18 @@
+#title, #description{
+  text-align: center;
+}
+
+form{
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+label{
+  margin-bottom: 5px;
+}
+
+#number{
+  width: 100px;
+}

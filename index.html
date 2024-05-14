@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Financial Approval</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Financing Application</h1>
+    <p id="description">
+      Please fill out this form to apply for a financial loan
+    </p>
+    <form id="survey-form">
+      <label for="name" id="name-label">
+        Full Name:
+        <input
+          id="name"
+          type="text"
+          placeholder="Enter first and last name"
+          required
+        />
+      </label>
+      <label for="email" id="email-label">
+        Email:
+        <input
+          id="email"
+          type="email"
+          placeholder="Enter valid email"
+          required
+        />
+      </label>
+      <label for="number" id="number-label">
+        Phone number:
+        <input
+          id="number"
+          type="number"
+          min="10"
+          max="10"
+          placeholder="5551236789"
+        />
+      </label>
+      <legend>Select loan type</legend>
+      <select id="dropdown">
+        <option>Financing</option>
+        <option>Leasing</option>
+      </select>
+
+      <label for="individual-loan">
+        <input value="individual-loan" type="radio" name="loan-type" />
+        individual
+      </label>
+      <label for="cosign-loan">
+        <input value="cosign-loan" type="radio" name="loan-type" /> co-sign
+      </label>
+      <legend>Select car make</legend>
+      <label for="car-type">
+        <input value="honda" type="checkbox" name="car-type" /> Honda
+      </label>
+      <label for="car-type">
+        <input value="kia" type="checkbox" name="car-type" /> Kia
+      </label>
+      <label for="car-type">
+        <input value="toyota" type="checkbox" name="car-type" /> Toyota
+      </label>
+      <label for="car-type">
+        <input value="jeep" type="checkbox" name="car-type" /> Jeep
+      </label>
+      <label for="more-info">
+        Any additional information
+        <textarea
+          id="more-info"
+          name="more-info"
+          rows="3"
+          cols="30"
+          placeholder="Please provide any information regarding your loan application"
+        ></textarea>
+      </label>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
